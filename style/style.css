@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+h2 {
+  height: 100px;
+  text-align: center;
+  color: black;
+  padding-top: 40px;
+}
+
+.new-todo {
+  height: 50px;
+}
+.new-todo form {
+  display: flex;
+  align-items: center;
+}
+.new-todo form input {
+  flex: 0;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-right: 0px;
+  outline: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  color: black;
+}
+.new-todo form button {
+  width: 130px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: red;
+  border: none;
+  outline: none;
+  border-left: 0px;
+  cursor: pointer;
+  text-align: right;
+}
+
+#todos-list {
+  height: 450px;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid rgb(219, 219, 219);
+  overflow: scroll;
+  border-radius: 0 0 5px 5px;
+}
+#todos-list .todo {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 5px;
+}
+#todos-list .todo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#todos-list .todo * {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+#todos-list .todo i {
+  font-size: 0.9rem;
+}
+#todos-list .todo p {
+  flex: 1;
+  word-break: break-all;
+}
+#todos-list .todo .bi-pencil-square {
+  color: rgb(31, 177, 48);
+}
+#todos-list .todo .bi-trash {
+  color: rgb(236, 82, 82);
+  margin: 0;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.notification {
+  position: absolute;
+  width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(233, 81, 81);
+  top: 10px;
+  right: 400px;
+  color: #fff;
+  transition: 300ms right ease-in-out;
+}
+
+.notif-enter {
+  right: 10px;
+}/*# sourceMappingURL=style.css.map */
